@@ -1,0 +1,15 @@
+{% for item in menu_items %}
+    {% if item.active %}
+        <li>
+            <a href="{{ item.path }}">{{ item.name }}</a>
+            {% if item.selected %}
+                You're here
+            {% endif %}
+            {% if item.children|length %}
+                <ul>
+                    {% include "menu/menu_items.html" with menu_items=item.children %}
+                </ul>
+            {% endif %}
+        </li>
+    {% endif %}
+{% endfor %}

@@ -1,0 +1,126 @@
+[
+  {
+    "model": "menu.menu",
+    "pk": 1,
+    "fields": {
+      "name": "main_menu"
+    }
+  },
+  {
+    "model": "menu.menu",
+    "pk": 2,
+    "fields": {
+      "name": "another_menu"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 1,
+    "fields": {
+      "menu": 1,
+      "parent": null,
+      "name": "Level 1",
+      "path": "/level-1/"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 2,
+    "fields": {
+      "menu": 1,
+      "parent": 1,
+      "name": "Level 2",
+      "path": "/level-2/"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 3,
+    "fields": {
+      "menu": 1,
+      "parent": null,
+      "name": "Menu item 1",
+      "path": "/menu-item-1/"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 4,
+    "fields": {
+      "menu": 1,
+      "parent": 2,
+      "name": "Level 3",
+      "path": "/level-3/"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 5,
+    "fields": {
+      "menu": 1,
+      "parent": 1,
+      "name": "Level 2-2",
+      "path": "/level-2-2/"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 6,
+    "fields": {
+      "menu": 1,
+      "parent": 3,
+      "name": "Menu named path",
+      "path": "menu-named-path"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 7,
+    "fields": {
+      "menu": 1,
+      "parent": 2,
+      "name": "Level 3-1",
+      "path": "/level-3-1/"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 11,
+    "fields": {
+      "menu": 2,
+      "parent": null,
+      "name": "lvl 0",
+      "path": "/lvl-0/"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 12,
+    "fields": {
+      "menu": 2,
+      "parent": null,
+      "name": "lvl 1",
+      "path": "/lvl-1/"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 13,
+    "fields": {
+      "menu": 2,
+      "parent": 11,
+      "name": "lvl 0 0",
+      "path": "/lvl-0-0/"
+    }
+  },
+  {
+    "model": "menu.menuitem",
+    "pk": 14,
+    "fields": {
+      "menu": 2,
+      "parent": 11,
+      "name": "lvl 0 1",
+      "path": "/lvl-0-1/"
+    }
+  }
+]
